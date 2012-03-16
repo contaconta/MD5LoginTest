@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4776C76315135FB30025DCDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4776C76215135FB30025DCDE /* UIKit.framework */; };
+		4776C76515135FB30025DCDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4776C76415135FB30025DCDE /* Foundation.framework */; };
+		4776C76715135FB30025DCDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4776C76615135FB30025DCDE /* CoreGraphics.framework */; };
+		4776C76D15135FB30025DCDE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4776C76B15135FB30025DCDE /* InfoPlist.strings */; };
+		4776C76F15135FB30025DCDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776C76E15135FB30025DCDE /* main.m */; };
+		4776C77315135FB30025DCDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776C77215135FB30025DCDE /* AppDelegate.m */; };
+		4776C77615135FB30025DCDE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4776C77415135FB30025DCDE /* MainStoryboard.storyboard */; };
+		4776C77915135FB30025DCDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776C77815135FB30025DCDE /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4776C75E15135FB20025DCDE /* MD5Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MD5Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4776C76215135FB30025DCDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4776C76415135FB30025DCDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4776C76615135FB30025DCDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4776C76A15135FB30025DCDE /* MD5Login-Info.plist */ = {isa = PBXFileReference; path = "MD5Login-Info.plist"; sourceTree = "<group>"; };
+		4776C76C15135FB30025DCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4776C76E15135FB30025DCDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4776C77015135FB30025DCDE /* MD5Login-Prefix.pch */ = {isa = PBXFileReference; path = "MD5Login-Prefix.pch"; sourceTree = "<group>"; };
+		4776C77115135FB30025DCDE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4776C77215135FB30025DCDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4776C77515135FB30025DCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4776C77715135FB30025DCDE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		4776C77815135FB30025DCDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4776C75B15135FB20025DCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4776C76315135FB30025DCDE /* UIKit.framework in Frameworks */,
+				4776C76515135FB30025DCDE /* Foundation.framework in Frameworks */,
+				4776C76715135FB30025DCDE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4776C75315135FB10025DCDE = {
+			isa = PBXGroup;
+			children = (
+				4776C76815135FB30025DCDE /* MD5Login */,
+				4776C76115135FB20025DCDE /* Frameworks */,
+				4776C75F15135FB20025DCDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4776C75F15135FB20025DCDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4776C75E15135FB20025DCDE /* MD5Login.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4776C76115135FB20025DCDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4776C76215135FB30025DCDE /* UIKit.framework */,
+				4776C76415135FB30025DCDE /* Foundation.framework */,
+				4776C76615135FB30025DCDE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4776C76815135FB30025DCDE /* MD5Login */ = {
+			isa = PBXGroup;
+			children = (
+				4776C77115135FB30025DCDE /* AppDelegate.h */,
+				4776C77215135FB30025DCDE /* AppDelegate.m */,
+				4776C77415135FB30025DCDE /* MainStoryboard.storyboard */,
+				4776C77715135FB30025DCDE /* ViewController.h */,
+				4776C77815135FB30025DCDE /* ViewController.m */,
+				4776C76915135FB30025DCDE /* Supporting Files */,
+			);
+			path = MD5Login;
+			sourceTree = "<group>";
+		};
+		4776C76915135FB30025DCDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4776C76A15135FB30025DCDE /* MD5Login-Info.plist */,
+				4776C76B15135FB30025DCDE /* InfoPlist.strings */,
+				4776C76E15135FB30025DCDE /* main.m */,
+				4776C77015135FB30025DCDE /* MD5Login-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4776C75D15135FB20025DCDE /* MD5Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4776C77C15135FB30025DCDE /* Build configuration list for PBXNativeTarget "MD5Login" */;
+			buildPhases = (
+				4776C75A15135FB20025DCDE /* Sources */,
+				4776C75B15135FB20025DCDE /* Frameworks */,
+				4776C75C15135FB20025DCDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MD5Login;
+			productName = MD5Login;
+			productReference = 4776C75E15135FB20025DCDE /* MD5Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4776C75515135FB10025DCDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4776C75815135FB10025DCDE /* Build configuration list for PBXProject "MD5Login" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4776C75315135FB10025DCDE;
+			productRefGroup = 4776C75F15135FB20025DCDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4776C75D15135FB20025DCDE /* MD5Login */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4776C75C15135FB20025DCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4776C76D15135FB30025DCDE /* InfoPlist.strings in Resources */,
+				4776C77615135FB30025DCDE /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4776C75A15135FB20025DCDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4776C76F15135FB30025DCDE /* main.m in Sources */,
+				4776C77315135FB30025DCDE /* AppDelegate.m in Sources */,
+				4776C77915135FB30025DCDE /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4776C76B15135FB30025DCDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4776C76C15135FB30025DCDE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4776C77415135FB30025DCDE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4776C77515135FB30025DCDE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4776C77A15135FB30025DCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4776C77B15135FB30025DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4776C77D15135FB30025DCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MD5Login/MD5Login-Prefix.pch";
+				INFOPLIST_FILE = "MD5Login/MD5Login-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4776C77E15135FB30025DCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MD5Login/MD5Login-Prefix.pch";
+				INFOPLIST_FILE = "MD5Login/MD5Login-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4776C75815135FB10025DCDE /* Build configuration list for PBXProject "MD5Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4776C77A15135FB30025DCDE /* Debug */,
+				4776C77B15135FB30025DCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4776C77C15135FB30025DCDE /* Build configuration list for PBXNativeTarget "MD5Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4776C77D15135FB30025DCDE /* Debug */,
+				4776C77E15135FB30025DCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4776C75515135FB10025DCDE /* Project object */;
+}
