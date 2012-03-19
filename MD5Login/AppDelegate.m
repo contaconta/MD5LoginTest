@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+
+#define XAPP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication]delegate])
 
 @implementation AppDelegate
 
@@ -15,6 +18,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+  
+  /*
+  UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+  UIViewController* loginVC = [storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
+  [self.window.rootViewController presentModalViewController:loginVC animated:YES];
+  */
     return YES;
 }
 							
