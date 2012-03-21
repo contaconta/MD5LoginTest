@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "MD5Login/LoginViewController.m"
-         timestampString = "353865333.700034"
+         timestampString = "353991127.68622"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-autholizeWithUsername:andPassword:"
          landmarkType = "5">
       </FileBreakpoint>

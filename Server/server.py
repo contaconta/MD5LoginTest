@@ -60,6 +60,15 @@ def login():
     abort(403)
 
 
+@app.route('/test')
+def test():
+  if 'username' in session:
+    return 'hello ' + session['username']
+
+  abort(403)
+
+
+
 
 @app.errorhandler(403)
 def invalid_request(error):

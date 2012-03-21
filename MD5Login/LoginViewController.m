@@ -25,13 +25,6 @@ NSString* kServerUrl = @"http://localhost:5000";
   NSURL *url = [NSURL URLWithString:kServerUrl];
   
   AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
-  /*
-   NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-   @'user', @"user[height]",
-   weight, @"user[weight]",
-   nil];
-   */
-  //NSMutableURLRequest *getRequest = [httpClient requestWithMethod:@"get" path:@"/login" parameters:nil];
   
   [httpClient getPath:@"/login"
            parameters:nil 
@@ -74,9 +67,12 @@ NSString* kServerUrl = @"http://localhost:5000";
                 [httpClient postPath:@"/login"
                           parameters:params
                              success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                               NSLog(@"httpClient postPath - success");
+                               NSString* res = [NSString stringWithUTF8String:[responseObject bytes]];
+                               
+                               NSLog(@"httpClient postPath - success %@",res);
+                               
                              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                               NSLog(@"httpClient postPath - failure %@", error );
+                               NSLog(@"httpClient postPath - failure %@", error);
                              }];
                 
                 
@@ -84,106 +80,6 @@ NSString* kServerUrl = @"http://localhost:5000";
               failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 NSLog(@"httpClient getPath - failure %@", error);
               }];
-  
-  
-  
-  
-  
-  
-  
-  /*
-   NSURL *getUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/login",kServerUrl]];
-   NSURLRequest *getRequest = [NSURLRequest requestWithURL:getUrl];
-   
-   AFJSONRequestOperation* getOperation
-   = [AFJSONRequestOperation
-   JSONRequestOperationWithRequest:getRequest
-   success:^(NSURLRequest *request, 
-   NSHTTPURLResponse *response, 
-   id JSON) 
-   {
-   NSLog(@"success - key:%@",[JSON valueForKeyPath:@"key"]);
-   
-   NSString* onetimeKey = [JSON valueForKeyPath:@"key"];
-   
-   NSString* rawStr = [NSString stringWithFormat:@"%@%@%@",username, password, onetimeKey];
-   NSString* encryptedStr = [rawStr md5];
-   NSLog(@"md5:%@",encryptedStr);
-   
-   NSMutableDictionary *params = [NSMutableDictionary dictionary];
-   [params setObject:username forKey:@"username"];
-   [params setObject:encryptedStr forKey:@"key"];
-   
-   //AFHTTPRequestOperation* postOperation
-   
-   
-   } 
-   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-   NSLog(@"failue - getOperation");
-   }];
-   
-   [getOperation start];
-   
-   */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  //AFHTTPRequestOperation* getOperation = httpClient   
-  /*
-   NSURLRequest *request = [NSURLRequest requestWithURL:url];
-   AFJSONRequestOperation *getKeyOperation
-   = [AFJSONRequestOperation
-   JSONRequestOperationWithRequest:request 
-   success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) 
-   {
-   NSLog(@"success - key:%@",[JSON valueForKeyPath:@"key"]);
-   
-   NSString* onetimeKey = [JSON valueForKeyPath:@"key"];
-   
-   NSString* rawStr = [NSString stringWithFormat:@"%@%@%@",username, password, onetimeKey];
-   NSString* encryptedStr = [rawStr md5];
-   NSLog(@"md5:%@",encryptedStr);
-   
-   
-   AFJSONRequestOperation *authOperation
-   = [AFJSONRequestOperation 
-   JSONRequestOperationWithRequest:request 
-   success:^(NSURLRequest *request,
-   NSHTTPURLResponse *response, 
-   id JSON) 
-   {
-   NSLog(@"success - authOperation");
-   
-   }
-   failure:^(NSURLRequest *request, 
-   NSHTTPURLResponse *response, 
-   NSError *error, 
-   id JSON)
-   {
-   NSLog(@"failue - authOperation");
-   }];
-   
-   [authOperation start];
-   
-   
-   }
-   failure:^(NSURLRequest *request, 
-   NSHTTPURLResponse *response, 
-   NSError *error, 
-   id JSON)
-   {
-   NSLog(@"failue - getKeyFromServer");
-   }];
-   
-   
-   [getKeyOperation start];
-   */
   
 }
 
@@ -196,6 +92,27 @@ NSString* kServerUrl = @"http://localhost:5000";
   [self autholizeWithUsername:self.usernameText.text
                   andPassword:self.passwordText.text];
 }
+
+
+- (IBAction)onTestButtonPushed:(id)sender
+{
+  NSURL *url = [NSURL URLWithString:kServerUrl];
+  AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
+  
+  [httpClient getPath:@"/test"
+           parameters:nil 
+              success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                
+                NSString* res = [NSString stringWithUTF8String:[responseObject bytes]];                
+                NSLog(@"httpClient postPath - success %@",res);
+                
+              } 
+              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                NSLog(@"httpClient getPath - failure %@", error);
+              }];
+  
+}
+
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)sender {
